@@ -28,7 +28,7 @@ if __name__ == '__main__':
     # with Pool(processes=agents) as pool:
     #     result = pool.map(square, dataset, chunksize)
 
-    agents = 10
+    agents = 20
     chunksize = 1
     with Pool(processes=agents) as pool:
         result = pool.map(download_hd_videos_with_sequence, lines[:10], chunksize)
